@@ -45,7 +45,7 @@ jobs:
           command: |
             npm i serverless-plugin-info-json
             echo "plugins:" >> serverless.yml
-            echo "  - serverless-plugin-info-json" >> serverless.yaml
-            cat serverless.yaml
+            echo "  - serverless-plugin-info-json" >> serverless.yml
+            cat serverless.yml
             serverless info --stage pre --json --file serverless-info.json
             cat serverless-info.json
