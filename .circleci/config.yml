@@ -41,5 +41,5 @@ jobs:
           command: sls deploy --stage pre
 
       - run:
-          name: Display stack info [debug]
-          command: cat serverless-info.json
+          name: Run End to End Test
+          command: npm run test:e2e
