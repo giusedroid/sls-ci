@@ -29,5 +29,8 @@
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "request-promise": "^4.2.2"
+  },
+  "dependencies": {
+    "serverless-stack-output": "^0.2.3"
   }
 }
