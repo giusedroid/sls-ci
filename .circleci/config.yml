@@ -33,5 +33,15 @@ jobs:
           command: npm test --coverage
 
       - run:
+          name: Prune for production
+          command: npm prune --production
+
+      - run:
           name: Deploy application
           command: sls deploy --stage pre
+      
+      - run:
+          name: return some info in preparation of e2e
+          command: |
+            serverless info | tee serverless.out
+            cat serverless.out
