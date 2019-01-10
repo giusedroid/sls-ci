@@ -6,12 +6,11 @@ provider:
   region: eu-west-1
 
 package:
-  exclude:
-    - .circleci
-    - .gitignore
-    - .nvmrc
-    - README.md
-    - "*.spec.js"
+  include:
+    - handler.js
+    - LICENSE
+    - package.json
+    - "package-lock.json"
 
 functions:
   hello:
