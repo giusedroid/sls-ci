@@ -20,3 +20,10 @@ functions:
     - http:
         path: hello
         method: get
+
+plugins:
+  - serverless-stack-output
+
+custom:
+  output:
+    file: ./serverless-info.json

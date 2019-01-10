@@ -39,13 +39,7 @@ jobs:
       - run:
           name: Deploy application
           command: sls deploy --stage pre
-      
+
       - run:
-          name: return some info in preparation of e2e
-          command: |
-            npm i serverless-plugin-info-json
-            echo "plugins:" >> serverless.yml
-            echo "  - serverless-plugin-info-json" >> serverless.yml
-            cat serverless.yml
-            serverless info --stage pre --json --file serverless-info.json
-            cat serverless-info.json
+          name: Display stack info [debug]
+          command: cat serverless-info.json
