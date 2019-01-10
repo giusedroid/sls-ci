@@ -18,5 +18,5 @@ functions:
     handler: handler.hello
     events:
     - http:
-        path: users/create
+        path: hello
         method: get
