@@ -8,7 +8,7 @@ The intersting part is in `.circleci/config.yml`.
 
 ## Why?
 Wanted to try out CircleCI, a nice container native CI/CD tool with a reasonable free tier.  
-Also, will probably use this to showcase CircleCI to clients / stakeholders / my mum.  
+Also, will probably use this to showcase CircleCI to clients / stakeholders.  
 
 ## How?
 1. Fork it
