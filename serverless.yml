@@ -1,0 +1,22 @@
+service: sls-ci
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-west-1
+
+package:
+  exclude:
+    - .circleci
+    - .gitignore
+    - .nvmrc
+    - README.md
+    - "*.spec.js"
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+    - http:
+        path: users/create
+        method: get
