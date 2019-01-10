@@ -44,6 +44,8 @@ jobs:
           name: return some info in preparation of e2e
           command: |
             npm i serverless-plugin-info-json
-            echo "plugins:\n  - serverless-plugin-info-json" >> serverless.yml
+            echo "plugins:" >> serverless.yml
+            echo "  - serverless-plugin-info-json" >> serverless.yaml
+            cat serverless.yaml
             serverless info --stage pre --json --file serverless-info.json
             cat serverless-info.json
