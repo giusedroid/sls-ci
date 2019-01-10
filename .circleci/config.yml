@@ -33,10 +33,6 @@ jobs:
           command: npm test --coverage
 
       - run:
-          name: Prune for production
-          command: npm prune --production
-
-      - run:
           name: Deploy application
           command: sls deploy --stage pre
 
@@ -45,5 +41,4 @@ jobs:
           command: |
             echo "Using API config"
             cat ./serverless-info.json
-            npm i
             npm run test:e2e
