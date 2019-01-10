@@ -43,5 +43,5 @@ jobs:
       - run:
           name: return some info in preparation of e2e
           command: |
-            serverless info | tee serverless.out
+            serverless info --stage pre | tee serverless.out
             cat serverless.out
