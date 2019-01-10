@@ -31,6 +31,10 @@ Install Serverless Framework
 ```bash
 npm i -g serverless
 ```
+Install Dependencies
+```bash
+npm i
+```
 Run Unit Tests
 ```bash
 npm test
